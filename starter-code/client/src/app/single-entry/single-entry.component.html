@@ -1,0 +1,11 @@
+<h1> Journal Details </h1>
+<a [routerLink]="['']"> Back to list </a>
+
+<div *ngIf="journal">
+
+  <div class="journal-info">
+    <h2> {{ journal.name }} </h2>
+    <h3> {{ journal.date }} </h3>
+    <p>  {{ journal.content }} </p>
+  </div>
+</div>
